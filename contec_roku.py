@@ -1107,8 +1107,8 @@ class AppExe:
         else:
             with st.sidebar:
                 #st.image("C:/clak/_app/_roku_run/contec.png", width=200)
-                st.image("C:/clak/_alfa_projects/contec_roku/contec.png", width=175)
-                
+                #st.image("C:/clak/_alfa_projects/contec_roku/contec.png", width=175)
+                st.image("https://github.com/clakshmanan/contec_Lisbon.jpg")
                 
                 # Add user management option for admins
                 if st.session_state.get('is_admin'):
