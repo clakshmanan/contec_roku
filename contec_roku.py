@@ -71,9 +71,9 @@ class Database:
                 
             except Exception as e:
                 st.error(f"AWS RDS Connection Failed: {str(e)}")
+                st.error("2. Security group allows your IP")
                 st.error("Please verify:")
                 st.error("1. Credentials in .env are correct")
-                st.error("2. Security group allows your IP")
                 st.error("3. AWS RDS instance is running")
 
                 raise
@@ -1107,8 +1107,8 @@ class AppExe:
         else:
             with st.sidebar:
                 #st.image("C:/clak/_app/_roku_run/contec.png", width=200)
-                #st.image("C:/clak/_alfa_projects/contec_roku/contec.png", width=175)
-                st.image("https://github.com/clakshmanan/contec_Lisbon.jpg")
+                st.image("C:/clak/_alfa_projects/contec_roku/contec.png", width=175)
+                
                 
                 # Add user management option for admins
                 if st.session_state.get('is_admin'):
